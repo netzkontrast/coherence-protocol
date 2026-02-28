@@ -1,3 +1,6 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+
 export default function Home() {
   return (
     <main className="min-h-screen coherence-spacing">
@@ -7,7 +10,7 @@ export default function Home() {
             Coherence Protocol
           </h1>
           <p className="text-xl text-muted-foreground">
-            AI-driven narrative coherence system
+            AI-driven narrative coherence system powered by Google Gemini
           </p>
         </header>
 
@@ -15,13 +18,23 @@ export default function Home() {
           <h2 className="text-3xl font-semibold">Welcome</h2>
           <p className="text-lg leading-relaxed">
             The Coherence Protocol is an AI-powered system for maintaining 
-            narrative coherence in complex fiction writing.
+            narrative coherence in complex fiction writing, now powered by 
+            Google's Gemini 2.0 Flash with OAuth authentication.
           </p>
+
+          <div className="pt-4">
+            <Link href="/auth/signin">
+              <Button size="lg" className="w-full md:w-auto">
+                Get Started with Google →
+              </Button>
+            </Link>
+          </div>
+
           <div className="grid gap-4 mt-8">
             <div className="pen-stroke-border bg-hope/10 p-6 text-hope">
-              <h3 className="font-semibold text-lg mb-2">Server-Driven UI</h3>
+              <h3 className="font-semibold text-lg mb-2">Gemini 2.0 Flash</h3>
               <p className="text-sm">
-                Agent-to-User Interface powered by Vercel AI SDK
+                Powered by Google's latest multimodal AI with OAuth integration
               </p>
             </div>
             <div className="pen-stroke-border bg-crystal/10 p-6 text-steel">
