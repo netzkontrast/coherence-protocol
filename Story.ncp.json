@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "world": {
+    "name": "Example Narrative World",
+    "created_at": "2026-02-28T12:00:00Z",
+    "entities": [],
+    "relations": [],
+    "events": [],
+    "state": {
+      "current_timestamp": null,
+      "active_threads": [],
+      "unresolved_tensions": []
+    }
+  },
+  "coherence_rules": {
+    "temporal_consistency": {
+      "enabled": true,
+      "description": "Events must maintain chronological order within each thread"
+    },
+    "character_continuity": {
+      "enabled": true,
+      "description": "Character traits and knowledge must remain consistent unless explicitly changed"
+    },
+    "relationship_symmetry": {
+      "enabled": true,
+      "description": "Relationships must be bidirectional and mutually acknowledged"
+    },
+    "fissure_detection": {
+      "enabled": true,
+      "threshold": 0.7,
+      "description": "Detect narrative inconsistencies above threshold"
+    }
+  },
+  "character_system": {
+    "tsdp_enabled": true,
+    "dissociation_layers": [
+      {
+        "name": "Apparently Normal Part (ANP)",
+        "function": "Daily functioning and external adaptation",
+        "color": "hope-yellow"
+      },
+      {
+        "name": "Emotional Part (EP)",
+        "function": "Processing trauma and intense emotions",
+        "color": "trauma-yellow"
+      }
+    ],
+    "integration_tracking": {
+      "enabled": true,
+      "metrics": [
+        "awareness",
+        "communication",
+        "cooperation"
+      ]
+    }
+  },
+  "schema_version": "1.0.0",
+  "last_updated": "2026-02-28T12:00:00Z"
+}
